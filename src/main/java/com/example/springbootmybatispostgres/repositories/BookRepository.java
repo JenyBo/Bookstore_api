@@ -30,4 +30,6 @@ public interface BookRepository {
 
     @Update("Update book set title=#{book.title}, isbn=#{book.isbn}, description=#{book.description}, page=#{book.page}, price=#{book.price} where id=#{id}")
     void update(long id ,@Param("book") Book book);
+
+    List<Book> getAll();
 }

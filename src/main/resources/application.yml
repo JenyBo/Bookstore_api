@@ -10,3 +10,6 @@ spring:
       continue-on-error: true
       mode: always
       platform: postgres
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
